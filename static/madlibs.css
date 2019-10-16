@@ -1,0 +1,22 @@
+p {
+    margin: 0 150px;
+    font-size: 25px;
+    font-family:"Courier New";
+}
+em {
+    font-style: italic;
+    color: {{ color }};
+}
+#noun {
+    color: red;
+}
+#person{
+    color: RoyalBlue;
+}
+.descriptor {
+    font-weight: bold;
+}
+#adj {
+    background-color: seashell;
+    color: Teal ;
+}

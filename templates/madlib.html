@@ -2,14 +2,25 @@
 <html>
 <head>
     <title>Storytime!</title>
+    <link rel="stylesheet" href="/static/madlibs.css">
+    <style>
+    </style>
 </head>
 <body>
     <p>
-        There once was a {{ color }} {{ noun }} sitting in the Hackbright lab. 
-        <br>
-        When {{ person }} went to pick it up, it burst into flames in a totally
-        <br>
-        {{ adjective }} way.
+        There once was a <em class="descriptor">{{ color }}</em> <em id="noun">{{ noun }}</em> sitting in the Hackbright lab. 
+        When <em id="person">{{ person }}</em> went to pick it up, it burst into flames in a totally
+        <em class="descriptor" id="adj">{{ adjective }}</em> way. 
+        {{ person }} forgot their personal information.
+        So, when the paramedic asked for their number, they said {{ email }} 
+        cause they were confused.
+        When they got to the hospital, the surgeon searched their belongings
+        and found their ID. 
+        And quickly discovered their birthday was on 
+        {{ birthdate }}. 
+        The surgeon contacted the DMV and was able to find the 
+        number of their emergency contact to be {{ number }}.
+
     </p>
 </body>
 </html>
