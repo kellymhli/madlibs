@@ -20,3 +20,9 @@ em {
     background-color: seashell;
     color: Teal ;
 }
+
+h1{
+    font-weight: bold;
+    color: Tomato;
+    text-align: auto;
+}

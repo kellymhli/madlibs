@@ -64,8 +64,12 @@ def show_madlib():
     number = request.args.get("number")
     email = request.args.get("email")
 
+    list_of_templates = ["madlib.html", "template2.html", "template3.html"]
 
-    return render_template("madlib.html",
+    template = choice(list_of_templates)
+
+
+    return render_template(template,
                             person=name, 
                             color=color,
                             noun=noun,
