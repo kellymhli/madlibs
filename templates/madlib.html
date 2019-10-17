@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Storytime!</title>
-    <link rel="stylesheet" href="/static/madlibs.css">
-</head>
-<body>
+{% extends 'base.html' %}
+    {% block title% }Storytime!{% endblock %}
+{% block content %}
     <p>
         There once was a <em class="descriptor">{{ color }}</em> <em id="noun">{{ noun }}</em> sitting in the Hackbright lab. 
         When <em id="person">{{ person }}</em> went to pick it up, it burst into flames in a totally
@@ -20,5 +16,4 @@
         number of their emergency contact to be {{ number }}.
 
     </p>
-</body>
-</html>
+{% endblock %}
