@@ -24,5 +24,6 @@ em {
 h1{
     font-weight: bold;
     color: Tomato;
-    text-align: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

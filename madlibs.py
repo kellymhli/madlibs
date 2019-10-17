@@ -48,6 +48,7 @@ def show_madlib_form():
     response = request.args.get("playgame")
 
     if response == 'yes':
+        print(request.args)
         return render_template("game.html")
     else:
         return render_template("goodbye.html")
@@ -67,6 +68,7 @@ def show_madlib():
     list_of_templates = ["madlib.html", "template2.html", "template3.html"]
 
     template = choice(list_of_templates)
+    print(type(birthdate))
 
 
     return render_template(template,

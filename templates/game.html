@@ -6,28 +6,25 @@
 <body>
 <form action="/madlib">
 Name a person: <input type="text" name="person"><br>
-Color: 
-<input type="radio" name="color" value="green">Green
-<input type="radio" name="color" value="blue">Blue
-<input type="radio" name="color" value="yellow">Yellow
-<input type="radio" name="color" value="purple">Purple
-<input type="radio" name="color" value="red">Red
+Color:
+{% for color in ['green', 'blue', 'yellow', 'purple', 'red'] %}
+    <input type="radio" name="color" value="{{ color }}">{{ color.capitalize() }}
+{% endfor %}
+
 <br>
 Noun: 
 <select name="noun">
-    <option value="oreo">Oreo</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="love">Love</option>
+{% for noun in ['oreo', 'dog', 'cat', 'love'] %}
+    <option value={{ noun }}> {{ noun.capitalize() }}</option>
+    {% endfor %}
 </select>
+
 <br>
 Adjective: 
 <select name="adjective">
-    <option value="runny">Runny</option>
-    <option value="galmorous">Glamorous</option>
-    <option value="victorious">Victorious</option>
-    <option value="dazzling">Dazzling</option>
-    <option value="ambitious">Ambitious</option>
+{% for adj in ['funny', 'glamorous', 'victorious', 'dazzling', 'ambitious'] %}
+    <option value={{ adj }}>{{ adj.title() }}</option>
+{% endfor %}
 </select>
 <br>
 <input type="date" name="birthdate">
